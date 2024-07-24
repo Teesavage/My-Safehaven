@@ -10,6 +10,7 @@ export default function Header() {
 
     const toggleSideBar = () => setIsOpen(!isOpen);
     
+    
 
     useEffect(() => {
         isOpen? document.getElementById("side-menu").style.width = "280px" : document.getElementById("side-menu").style.width = "0px";
@@ -51,7 +52,7 @@ export default function Header() {
              </Link>
            </li>
            <li className="nav-item">
-             <Link href="" className="nav-link">
+             <Link href="/community" className="nav-link">
                Community
              </Link>
            </li>
@@ -70,14 +71,13 @@ export default function Header() {
                Sign Up
              </Link>
            </li>
-
          </ul>
          
        </div>
 
        {/*SMALL SCREEN HEADER*/}
 
-       <button className="my-tog-btn" onClick={() => toggleSideBar()} >
+       <button className="my-tog-btn" onClick={() => toggleSideBar()}>
                 &#9776;
             </button>
        <div className="side-menu" id="side-menu">
@@ -104,7 +104,7 @@ export default function Header() {
              </Link>
            </li>
            <li className="side-item">
-             <Link href="" className="side-link">
+             <Link href="/community" className="side-link">
                Community
              </Link>
            </li>

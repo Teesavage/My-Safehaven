@@ -11,7 +11,7 @@ export default function Root() {
     const heroImage = {
         backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))",
         width: "100%",
-        height: "auto",
+        height: "500px",
         position: "relative",
         
     }
@@ -20,7 +20,7 @@ export default function Root() {
         position: "absolute",
         top: "50%",
         left: "40%",
-        transform: "translate(-50%, -50%)",
+        transform: "translate(-50%, -60%)",
         color: "#fff",
     }
     return(
@@ -34,7 +34,8 @@ export default function Root() {
                 domestic violence, substance abuse, mental health issues and child abuse.
                 Find help, resources and professional support for a safer, healthier future.
             </p>
-            <button className="heroBtn">Sign In</button><button className="heroBtn">Sign Up</button>
+            <Link href="/homepage"><button className="heroBtn">Sign In</button></Link>
+            <Link href="/signup"><button className="heroBtn">Sign Up</button></Link>
            </div> 
             
          </div>
